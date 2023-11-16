@@ -18,7 +18,33 @@ This Flask application processes submitted forms, matches them with existing for
 
 ## Installation
 
-#### Start the project without Docker:
+### Start project using docker-compose
+You can run the Flask application using Docker. Make sure you have Docker installed on your system.
+1. The first thing to do is to clone the repository:
+    ```bash
+    git clone https://github.com/marik177/template_matcher.git
+   ```
+2. Using the Dockerfile and docker-compose.yaml build the project:
+   ```bash
+   docker-compose up --build
+    ```
+3. Run Docker Container
+    ```bash 
+   docker-compose up
+    ```
+4. To test applicationIn in new terminal window run command:
+   ````bash
+   docker-compose exec web sh
+   
+   python test_requests.py
+   ````   
+5. To stop the Docker container, use the following command:
+    ```bash 
+   docker-compose down
+    ```
+
+
+### Start the project without Docker:
 1. The first thing to do is to clone the repository:
     ```bash
     git clone https://github.com/marik177/template_matcher.git
